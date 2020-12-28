@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+    h1 Enter Details
+    form(action="/products/add",method="post")
+        .form-group
+            label(for="name") Name
+            input#name(type="text", class="form-control", name="name")
+        .form-group
+            label(for="contact") Contact
+            input#contact(type="text", class="form-control", name="contact")
+        input(type="submit", class="btn btn-info")
